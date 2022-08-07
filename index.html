@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .button {
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #27AE60;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 18px;
+          padding: 4px;
+          width: 130px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 0.2px;
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+</head>
+<body class="main-content">
+   
+    <header class="container header active" id="home">
+        <div id="particles-js">
+            
+                
+
+            <div class="center-text">
+                    <h3>Hey ! je M'appelle</h3><br>
+                    <h1>Mamadou Diallo</h1><br>
+            
+                    <div class="text-fix">
+                   
+                        <h3>Je suis <span class="auto-type"></span></h3>
+                    
+                    </div>
+             
+            </div>
+         
+                
+        </div>
+   
+    </header>
+
+    
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>À propos de <span>moi</span><span class="bg-text">Diallo</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Faisons connaissance :)</h4>
+                    <p>
+                        Avant toute chose, je me présente. Je suis un étudiant en Licence informatique. j'ai commencé à apprendre la programmation en autodidacte.
+                        Aujourd'hui je continue à approfondir mes connaissances en plus de mes études en suivant des formations en ligne et en créant certains projets personnels.  <br /> <br /> Je suis passionné, curieux et avide de connaissance, j'aime le travail en équipe et la recherche de solutions 
+                        pour améliorer nos produits et processus afin de satisfaire au mieux le client final. L'escalade, les voyages et la culture sont des passions que j'aime autant que la programmation.
+                    </p>
+                    <div class="submit-btn">
+                        <a href="#" class="main-btn">
+                            <span class="btn-text">Telechargez mon CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+               
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">50+</p>
+                            <p class="small-text">Projets <br /> realisés</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1+</p>
+                            <p class="small-text">Ans <br /> experiences</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">18+</p>
+                            <p class="small-text">Clients <br /> Satisfaits</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">19+</p>
+                            <p class="small-text">D'avis <br /> positives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">Compétences</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">89%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">CSS3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">C/C++</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">PHP</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">Parcours</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2020 - present</p>
+                    <h5>Licence informatique<span> - Université Nice cote d'azur</span></h5>
+                    <p>
+                        specialiste en informatique
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2019 - 2020</p>
+                    <h5>Formation d'ingénieur  <span> - UTBM</span></h5>
+                    <p>
+                        Génie Electronique
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2017 - 2019</p>
+                    <h5>BTS ATI<span> - Lycée Guillaume Apollinaire </span></h5>
+                    <p>
+                        BTS Assistance technique d'ingénieur (ATI)
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2017</p>
+                    <h5>Bac Scientique <span> </span></h5>
+                    <p>Avant de débuter une formation dans le développement web, j'ai toujours été  passionné par
+                         la complexité de l'informatique et plus précisément la programmation.
+                        
+                    </p>
+                </div>
+               
+               
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>Mon <span>Portfolio</span><span class="bg-text">Taff</span></h2>
+            </div>
+            <p class="port-text">
+                Présentation de mes expériences personnel, scolaire ou encore professionnel 
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port1.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Pickomino</h3>
+                        <p>
+                        Projet universitaire realisé en goupe de 3 en language C.
+                            </p>
+                        <div> <br><br><br>
+                            <a href="https://mbaillo.github.io/m/"target="_blank"  style="color:rgb(212, 115, 216)" >
+                               en savoir plus </i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port8.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Projet encours !</h3>
+                        <p>
+                           Site vitrine pour un salon de coiffure professionnel
+                            </p>
+                        <div> <br><br><br>
+                            <a href="https://mbaillo.github.io/m/" target="_blank" style="color:rgb(212, 115, 216)" >
+                               en savoir plus </i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>SushiFast</h3>
+                        <p>
+                            Projet 
+                           de Site (fictif) vitrine a base de (HTML5/CSS3, JS) realisé en binome.
+                            </p>
+                        <div> <br><br><br>
+                            <a href="https://mbaillo.github.io/m/"target="_blank" style="color:rgb(212, 115, 216)" >
+                               en savoir plus </i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Planning partager</h3>
+                        <p> site realisé avec du html css et php pour une utilisation personnel avec mon cercle d'amis
+                            </p>
+                        <div> <br><br><br>
+                            <a href="https://mbaillo.github.io/m/" target="_blank"style="color:rgb(212, 115, 216)" >
+                               en savoir plus </i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>H_ang_an</h3>
+                        <p>
+                            j'ai developpé un jeu du pendu en Python
+                            </p>
+                        <div> <br><br><br>
+                            <a href="https://mbaillo.github.io/m/" target="_blank" style="color:rgb(219, 105, 223)" >
+                               en savoir plus </i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/blog3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>All news</h3>
+                        <p>
+                            All news est un projet personnel que j'ai developpé, l'idée est de regrouper des infos  ciblées de differentes pages sur une seule page notamment a travers php
+                            </p>
+                        <div> <br><br><br>
+                            <a href="https://mbaillo.github.io/m/" target="_blank" style="color:rgb(219, 105, 223)" >
+                               en savoir plus </i>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>Mon <span>Domaine</span><span class="bg-text">Services</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Développement Web
+                            </h4>
+                            <p>
+                               Développement de sites internet de niveau professionnel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Gestion de projet
+                            </h4>
+                            <p>
+                            Coordine les équipiers afin de mener le projet jusqu'au succès.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Accompagnement en création de site web 
+                            </h4>
+                            <p>
+                                Propose d'accompagnement pour decouvrir l'univers de la création web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Architecture Web
+                            </h4>
+                            <p>
+                                Taille l'architecture au mieux pour coller avec les besoins réels du client.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>gardons <span>contact</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h5>Contactez-moi</h5>
+                        <p>
+                           
+                        </p>
+                        <div class="contact-info">
+                           
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email :</span>
+                                </div>
+                                <p>
+                                    <span>creaweb.md@gmail.com</span>
+                                </p>
+                            </div>
+                           
+                            
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Langues :</span>
+                                </div>
+                                <p>
+                                    <span>Francais, Anglais, Peul,Bamanan</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Localisation :</span>
+                                </div>
+                                <p>
+                                    Nice, France
+                                </p>
+                            </div>
+                        </div>
+                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92289.42031684252!2d7.179339325930917!3d43.709626666475714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd1ef5defaad1%3A0xd8dc6d3944fc5177!2sRue%20Jules%20Bianchi%2C%2006200%20Nice!5e0!3m2!1sfr!2sfr!4v1659724764715!5m2!1sfr!2sfr" 
+                        width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://twitter.com/?lang=fr" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://github.com/" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <h4>Écrivez-moi</h4>
+                        <form action="https://formsubmit.co/yluss91@gmail.com" class="contact-form" method="POST">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="Votre nom...">
+                                <input type="email" required placeholder="Votre mail...">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8"  required placeholder="Votre message ..."></textarea>
+                                
+                            </div>
+                            <input type="hidden" name="_next" value="https://mbaillo.github.io/github.test/">
+                            <button class="button"type="submit" style="vertical-align:middle"><span>Envoyer</span></button>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+        var styped= new Typed(".auto-type",{
+            strings: ["un Développeur","ouvert d'esprit","un Créatif"," un Etudiant", ],
+            typeSpeed:160,
+            loop: true
+        })
+
+    </script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
