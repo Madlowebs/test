@@ -459,6 +459,7 @@
                             <div class="input-control i-c-2">
                                 <input type="text" required placeholder="Votre nom..." id="nom">
                                 <input type="email" required placeholder="Votre mail..." id="email">
+                                <input type="subject" required placeholder="objet..." id="subject">
                             </div>
                             <div class="input-control">
                                 <textarea name="" id="message" cols="15" rows="8"  required placeholder="Votre message ..."></textarea>
@@ -505,6 +506,7 @@
             e.preventDefault()
             var nom  = document.getElementById('nom').value;
             var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
             var message = document.getElementById('message').value;
             var body = 'nom:'+nom +'<br/> email :' +email +'<br/> message'+message;
         
@@ -514,8 +516,8 @@
                 Password : "itbhzpcilcmywlpc",
                 To : 'creaweb.md@gmail.com',
                 From : email,
-                
-                Body : body
+                subject: subject,
+                Body: body,
             }).then(
               message => alert(message)
             );
