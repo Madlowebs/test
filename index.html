@@ -455,17 +455,17 @@
                     </div>
                     <div class="right-contact">
                         <h4>Écrivez-moi</h4>
-                        <form action="https://formsubmit.co/b435fa0d30135dd6097dfe2bacc6b193" class="contact-form" method="POST">
+                        <form  class="contact-form" method="post">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="Votre nom...">
-                                <input type="email" required placeholder="Votre mail...">
+                                <input type="text" required placeholder="Votre nom..." id="nom">
+                                <input type="email" required placeholder="Votre mail..." id="email">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8"  required placeholder="Votre message ..."></textarea>
+                                <textarea name="" id="message" cols="15" rows="8"  required placeholder="Votre message ..."></textarea>
                                 
                             </div>
                             <input type="hidden" name="_next" value="https://mbaillo.github.io/github.test/">
-                            <button class="button"type="submit" style="vertical-align:middle"><span>Envoyer</span></button>
+                            <button  id="btn" class="button"type="submit" style="vertical-align:middle"><span>Envoyer</span></button>
                            
                         </form>
                     </div>
@@ -496,7 +496,32 @@
     <div class="theme-btn">
         <i class="fas fa-adjust"></i>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener('click', function(e) {
+            e.preventDefault()
+            var nom  = document.getElementById('nom').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var body = 'nom:'+nom +'<br/> email :' +email +'<br/> message'+message;
+        
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "creaweb.md@gmail.com",
+                Password : "itbhzpcilcmywlpc",
+                To : 'creaweb.md@gmail.com',
+                From : email,
+                
+                Body : body
+            }).then(
+              message => alert(message)
+            );
+        })
+
+    </script>
     
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
