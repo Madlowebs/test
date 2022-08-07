@@ -459,13 +459,16 @@
                             <div class="input-control i-c-2">
                                 <input type="text" required placeholder="Votre nom..." id="nom">
                                 <input type="email" required placeholder="Votre mail..." id="email">
-                                <input type="subject" required placeholder="objet..." id="subject">
+                               
+                            </div>
+                            <div class="input-control">
+                                <input type="subject" required placeholder="ENTER SUBJECT" id="subject">
                             </div>
                             <div class="input-control">
                                 <textarea name="" id="message" cols="15" rows="8"  required placeholder="Votre message ..."></textarea>
                                 
                             </div>
-                            <input type="hidden" name="_next" value="https://mbaillo.github.io/github.test/">
+                            
                             <button  id="btn" class="button"type="submit" style="vertical-align:middle"><span>Envoyer</span></button>
                            
                         </form>
@@ -508,7 +511,7 @@
             var email = document.getElementById('email').value;
             var subject = document.getElementById('subject').value;
             var message = document.getElementById('message').value;
-            var body = 'nom:'+nom +'<br/> email :' +email +'<br/> message'+message;
+            var body = 'nom:'+nom +'<br/> email :' +email  + '<br/> subject :'+ subject +'<br/> message'+message;
         
             Email.send({
                 Host : "smtp.gmail.com",
